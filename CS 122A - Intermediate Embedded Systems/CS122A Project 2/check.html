@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Example</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+    <script>
+        function toggleText() {
+            var userInput = document.getElementById("userInput").value.toLowerCase();
+            var hiddenText = document.getElementById("hiddenText");
+            
+            if (userInput === "yes") {
+                hiddenText.classList.remove("hidden");
+            } else {
+                hiddenText.classList.add("hidden");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Form Example</h1>
+    
+    <form>
+        <label for="userInput">Enter "yes" or "no":</label><br>
+        <input type="text" id="userInput" name="userInput"><br><br>
+        <input type="button" value="Submit" onclick="toggleText()">
+    </form>
+    
+    <p id="hiddenText" class="hidden">Congratulations! The text is now visible.</p>
+</body>
+</html>
