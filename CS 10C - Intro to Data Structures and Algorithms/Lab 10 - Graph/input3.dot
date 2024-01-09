@@ -1,0 +1,6 @@
+digraph G {
+Joe_the_Plumber[label = "Joe_the_Plumber, 0"]
+Joe_the_Plumber -> Bob
+Bob[label = "Bob, 1"]
+Bob -> Joe_the_Plumber
+}
