@@ -1,7 +1,0 @@
-digraph G {
-Bui -> Adam;
-Chan -> Carr;
-Dan -> Chan;
-Dan -> Edie;
-Bui -> Dan;
-}
